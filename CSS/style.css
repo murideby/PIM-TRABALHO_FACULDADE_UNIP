@@ -109,9 +109,9 @@ a{
 }
 
 .video{
-    background-color: #566acc6e;
+    background-color: #EBF5FE;
     width: 100%;
-    height: 1000px;
+    height: 700px;
     
 }
 .rodape{
@@ -556,4 +556,5 @@ form .button-login input:hover{
         width: cal(100% / 2 - 20px);
     }
 }
+
 
