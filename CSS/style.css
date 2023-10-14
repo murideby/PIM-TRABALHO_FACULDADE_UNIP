@@ -517,15 +517,22 @@ form .detalhes_usuario_login .input-box-login{
 .detalhes_usuario_login .input-box-login input:valid{
     border-color: #24389C;
 }
+
+.alerta {
+    color: red;
+    font-size: 13px;
+    margin: 10px 0 0 3px;
+    display: none;
+}
+
 form .button-login{
     height: 45px;
     margin: 45px 0;
     background-image: linear-gradient(135deg, #3192B5,#24389C);
     align-items: center;
     justify-content: center; 
-    
-    
 }
+
 form .button-login input{
     height: 100%;
     width: 190%;

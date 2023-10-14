@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="texto">Bem vindo, <span id="span">usuario</span>!</p>
+    <p id="texto2">Seu id de funcionario é: <span id="span2">id</span>!</p>
+
+    <label for="meses">Selecione um mês:</label>
+    <select id="meses">
+        <option value="0">Todos</option>
+        <option value="1">Janeiro</option>
+        <option value="2">Fevereiro</option>
+        <option value="3">Março</option>
+        <option value="4">Abril</option>
+        <option value="5">Maio</option>
+        <option value="6">Junho</option>
+        <option value="7">Julho</option>
+        <option value="8">Agosto</option>
+        <option value="9">Setembro</option>
+        <option value="10">Outubro</option>
+        <option value="11">Novembro</option>
+        <option value="12">Dezembro</option>
+    </select>
+    
+    <button id="btn-holerite">Gerar Holerite</button>
+
+    <table border="1" id="holerite">
+        <thead>
+            <tr>
+                <th>Nome Funcionário</th>
+                <th>Cargo</th>
+                <th>Salário Base</th>
+                <th>Descontos</th>
+                <th>Salário Líquido</th>
+                <th>Data de Pagamento</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+</body>
+<script src="./functions/getInfo.js"></script>
+<script src="./functions/getHolerite.js"></script>
+</html>
