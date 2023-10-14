@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (responseData.statusCode === 200) {
             localStorage.setItem('funcionario_id', responseData.funcionario_id);
-            window.location.href = './principal.html';
+            window.location.href = './holerite.html';
         } else {
             credentialAlert.style.display = 'block';
         }
