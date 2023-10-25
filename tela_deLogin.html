@@ -30,15 +30,16 @@
                     <img src="imagens/logo_teste.png">
                     <div class="input-box-login">
                         <span class="detalhes">Login</span>
-                        <input type="text" placeholder="Informe seu login" required>
+                        <input id="login" type="text" placeholder="Informe seu login" required>
                     </div>
                     <div class="input-box-login">
                         <span class="detalhes">Senha</span>
-                        <input type="text" placeholder="Informe a sua senha" required>
+                        <input id="senha" type="password" placeholder="Informe a sua senha" required>
+                        <p id="alerta">Login ou senha invalidos</p>
                     </div>
                    
                     <div class="button-login">
-                        <input type="submit" value="Login">
+                        <input id="btn-login" type="button" value="Login">
                     </div>
 
                 </div>
@@ -95,4 +96,5 @@
     </footer>
     
 </body>
+    <script src="./functions/loginRequest.js"></script>
 </html>
