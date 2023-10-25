@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash RH</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="rodape2">
+        <h4>Dash RH</h4>
+    </div>
+    <header class="header">
+        <nav class="nav">
+            <img class="logo_login" src="imagens/logo_semnome-removebg-preview.png">
+            <ul class="nav-list">
+                <li></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="rodape3">
+        <nav class="menu">
+            <input type="checkbox" class="menu-fake"/>
+            <div class="menu-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <p id="texto">Bem vindo, <span id="span">{user}</span>!👋</p>
+                  
+            <br><br><br><br>  
+            <main class="cards">
+                <section class="card shop">
+                    <div class="icon">
+                        <img src="imagens/relogio.png" alt="Registro de ponto">
+                    </div>
+                    <h3>Registro de ponto</h3>
+                    <span>Antes de começar o seu trabalho, não esqueça de bater o seu ponto!</span>
+                    <a href="ponto.html"><button>Bater o ponto</button></a>
+                </section>
+            </main>
+            <main class="cards">
+                <section class="card shop">
+                    <div class="icon">
+                        <img src="imagens/documento.png" alt="Gerar Holerite">
+                    </div>
+                    <h3>Gerar Holerite</h3>
+                    <span>Consulte os seus holerites, de forma rápida e interativa.</span>
+                    <a href="holerite.html"><button>Gerar Holerite</button></a>
+                </section>
+                <section class="card shop">
+                    <div class="icon">
+                        <img src="imagens/documento (1).png" alt="Consultar dados">
+                    </div>
+                    <h3>Consultar dados</h3>
+                    <span>Consulte os dados dos seus colaboradores ou seus próprios dados.</span>
+                    <button>Consultar dados</button>
+                </section>
+                <section class="card shop">
+                    <div class="icon">
+                        <img src="imagens/economizar.png" alt="Recibo de pagamento">
+                    </div>
+                    <h3>Recibo de pagamento</h3>
+                    <span>Consulte os seus recibos de pagamento </span><br>
+                    <button>Recibo de pagamento</button>
+                </section>
+                
+            </main>
+            <main class="cards">
+                <section class="card shop">
+                    <div class="icon">
+                        <img src="imagens/suporte-tecnico.png" alt="Shop here.">
+                    </div>
+                    <h3>Suporte T.I</h3>
+                    <span>Está com dificuldades?, chame a equipe do suporte T.I</span>
+                    <button>Entrar em contato</button>
+                </section>
+                <section class="card shop">
+                    <div class="icon">
+                        <img src="imagens/codigo-de-senha.png" alt="Alterar senha">
+                    </div>
+                    <h3>Alterar minha senha</h3>
+                    <span>Tá difícil memorizar a senha?<br><br></span>
+                    <button>Alterar senha</button>
+                </section> 
+            </main>
+           
+
+            <ul>
+                <br><br>
+                <a href="index.html" class="logo"><img src="imagens/Imagem1.png"></a><br><br>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Consultar dados</a></li>
+                <li><a href="#">Recibo de pagamento</a></li>
+                <li><a href="holerite.html">Gerar holerite</a></li>
+                <li><a href="ponto.html">Registro de ponto</a></li>
+                <li><a href="tela_deLogin.html">Sair</a></li>
+            </ul>
+        </nav>
+    </div>  
+</body>
+    <script src="./functions/getInfo.js"></script>
+</html>

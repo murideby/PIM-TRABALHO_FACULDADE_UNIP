@@ -4,47 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dash RH</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="index.html" class="logo"><img src="imagens/Imagem1.png"></a>
+            <a href="/" class="logo"><img src="imagens/Imagem1.png"></a>
             <ul class="nav-list">
                 <li><a href="#">Plataforma</a></li>
                 <li><a href="#">Plano</a></li>
                 <li><a href="#">Quem Somos</a></li>
-                <li><a href="suporteTI.html">Suporte</a></li>
-                <li><a href="tela_deLogin.html" class="contato_pern">Conecte-se</a></li>
-                <li><a href="solicitarDemo.html">Solicitar Demo</a></li>
+                <li><a href="/suporte">Suporte</a></li>
+                <li><a href="/login" class="contato_pern">Conecte-se</a></li>
+                <li><a href="/solicitacao">Solicitar Demo</a></li>
             </ul>
         </nav>
     </header>   
     <nav id="conteudo_telaLogin">
         <img src="imagens/Imagem_principal-removebg-preview.png">
         <div class="conteinerLogin">
-            <form action="#">
-                <div class="detalhes_usuario_login">
-                    <img src="imagens/logo_teste.png">
-                    <div class="input-box-login">
-                        <span class="detalhes">Login</span>
-                        <input id="login" type="text" placeholder="Informe seu login" required>
-                    </div>
-                    <div class="input-box-login">
-                        <span class="detalhes">Senha</span>
-                        <input id="senha" type="password" placeholder="Informe a sua senha" required>
-                        <p id="alerta">Login ou senha invalidos</p>
-                    </div>
-                   
-                    <div class="button-login">
-                        <input id="btn-login" type="button" value="Login">
-                    </div>
-
+            <!-- <form action="/login" method="POST"> -->
+            <form>
+              <div class="detalhes_usuario_login">
+                <img src="imagens/logo_teste.png">
+                <div class="input-box-login">
+                  <span class="detalhes">Login</span>
+                  <input name="login" id='login' type="text" placeholder="Informe seu login" required>
                 </div>
-            </form>
-         </div>
+                <div class="input-box-login">
+                  <span class="detalhes">Senha</span>
+                  <input name="senha" id='senha' type="password" placeholder="Informe a sua senha" required>
+                  <div id="alerta" class="alerta">Login e senha incorretos. Por favor, tente novamente.</div>
+                </div>
+                <div class="button-login">
+                  <input id="btn-login" type="button" value="Login">
+                </div>
+              </div>
+            </form> 
+          </div>          
     </nav>
     <footer class="footer">
         <div class="rodape">
@@ -94,7 +93,7 @@
             <h4></h4>
         </div>
     </footer>
-    
 </body>
-    <script src="./functions/loginRequest.js"></script>
+<script src="./functions/loginRequest.js"></script>
+
 </html>

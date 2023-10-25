@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Ponto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .cronometro {
+            font-size: 24px;
+        }
+
+        #startStop {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #reset {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="rodape2">
+        <h4>Dash RH</h4>
+    </div>
+    <header class="header">
+        <nav class="nav">
+            <img class="logo_login" src="imagens/logo_semnome-removebg-preview.png">
+            <ul class="nav-list">
+                <li></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="rodape3">
+        <nav class="menu">
+            <input type="checkbox" class="menu-fake"/>
+            <div class="menu-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <a href="index.html" class="logo"><img src="imagens/Imagem1.png"></a><br><br>
+                <li><a href="home-login.html">Home</a></li>
+                <li><a href="#">Consultar dados</a></li>
+                <li><a href="#">Recibo de pagamento</a></li>
+                <li><a href="holerite.html">Gerar holerite</a></li>
+                <li><a href="ponto.html">Registro de ponto</a></li>
+                <li><a href="tela_deLogin.html">Sair</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1 class="titulo_ponto">Registrar Ponto</h1><br><br>
+    <div class="cronometro" id="cronometro">00:00:00</div>
+    <button id="startStop">Registrar Entrada</button>
+    <script src="./functions/pontoController.js"></script>
+ 
+</body>
+</html>

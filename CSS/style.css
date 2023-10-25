@@ -576,6 +576,13 @@ form .button-login input:hover{
     align-items: center;
     justify-content: center; 
 }
+
+#alerta {
+    color: red;
+    font-size: 12px;
+    margin: 10px 0 0 3px;
+}
+
 @media (max-width:584px){
     .conteiner_suporte{
         max-width: 100%;
